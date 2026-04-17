@@ -9,6 +9,9 @@ on:
   pull_request:
     branches:
       - main
+  schedule:
+    # Run every Sunday at 00:00 UTC
+    - cron: '0 0 * * 0'
   workflow_dispatch:
 
 env:
@@ -50,6 +53,8 @@ jobs:
             type=semver,pattern={{major}}
             type=sha,prefix=
             type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
+            type=schedule,pattern={{date 'YYYYMMDD'}}
+            type=schedule,pattern=weekly
 
       - name: Build and push Docker image
         id: build
