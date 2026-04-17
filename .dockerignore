@@ -1,0 +1,29 @@
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+LICENSE
+
+# IDE
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.tiff
+*.heic
+*.heif
+test-images/
+
+# Logs
+*.log

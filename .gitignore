@@ -1,0 +1,28 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Docker
+*.tar
+*.tar.gz
+
+# Test images
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.tiff
+*.heic
+*.heif
+!test-images/
+
+# Logs
+*.log
